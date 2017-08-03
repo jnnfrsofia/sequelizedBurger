@@ -5,7 +5,7 @@
     "node": "7.7.2",
     "npm": "4.1.2"
   },
-  "description": "",
+  "description": "A burger eating application that uses Node.js/Express/MySQL/Handlebars/Materialize.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
