@@ -25,7 +25,8 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
-    "method-override": "^2.3.9"
+    "method-override": "^2.3.9",
+    "sequelize": "^4.23.4"
   },
   "devDependencies": {}
 }
