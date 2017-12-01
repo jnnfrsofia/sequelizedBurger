@@ -7,9 +7,9 @@ This web application uses HTML/CSS and Materialize on the front end and Node.js 
 
 The user can choose to enter a new burger name to the app or to click an already existing burger from the available burgers on the left side of page (pulled from the MySQL database). If the user adds a new burger, this burger is added to both the existing MySQL database and the home page via a new burger button. If the user clicks one of the available burgers, the burger's status now changes from available to devoured in the MySQL database, and moves from the 'available' to the 'devoured' column. Once in the devoured column, the user can choose to click the burger to delete it from both the app and the database. 
 
-<!-- ## Demo
+## Demo
 
-The demo of the burger eating application can be found [here](https://blooming-retreat-30822.herokuapp.com). -->
+The demo of the burger eating application can be found [here](https://eat-da-brgr.herokuapp.com/burgers).
 
 ## Installation
 
