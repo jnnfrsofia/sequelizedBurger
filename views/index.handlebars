@@ -4,27 +4,31 @@
   <div class="container">
   {{!-- AVAILABLE BURGERS TO EAT --}}
     <div class="row">
-      <div class="col s6">
+      <div class="col s12">
+        <h2>Burger Menu </h2>
         {{#each burgers}}
           {{#unless this.devoured}}
             <div>
               <form action="burgers/devour/{{this.id}}?_method=PUT" method="POST">
-              <input type="hidden" name="devoured" value="1">
-                <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+              <input type="hidden" name="devoured" value={{this.id}}>
+                <button type="submit" class='burgerAvailable'> Click to eat the {{this.burger_name}}</button>
               </form>
             </div>
           {{/unless}}
         {{/each}}
       </div>
+    </div>
 
-      <div class="col s6">
+      <div class="row">
+      <div class="col s12">
+        <h2>Devoured Burgers</h2>
       <ul>
         {{#each burgers}}
           {{#if this.devoured}}
-          <form action="burgers/delete/{{this.id}}?_method=DELETE" method="POST">
-          <input type="hidden" name="delete" value="1">
-          <button type="submit" class="deleteBurger"> Click to remove the {{this.burger_name}}</button>
-      </div>
+         {{!--  <form action="burgers/delete/{{this.id}}?_method=DELETE" method="DELETE">
+          <input type="hidden" name="delete" value={{this.id}}> --}}
+          <button type="submit" class="deleteBurger"> The {{this.burger_name}} has been devoured </button>
+        {{!-- </form> --}}
           {{/if}}
         {{/each}}
       </ul>

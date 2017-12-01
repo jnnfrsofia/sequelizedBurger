@@ -57,17 +57,17 @@ router.put("/burgers/devour/:id", function(req, res) {
 
 });
 
-//delete route that removes a burger from the DB and the main burgers page
-router.delete('burgers/delete/:id', function(req, res) {
- return db.Burger.destroy({
-        where: {
-            id: req.params.id
-        }
-    }).then(function() {
-        res.redirect("/burgers");
-    });
+// //delete route that removes a burger from the DB and the main burgers page
+// router.delete('/burgers/delete/:id', function(req, res) {
+//  return db.Burger.destroy({
+//         where: {
+//             id: req.params.id
+//         }
+//     }).then(function() {
+//         res.redirect("/burgers");
+//     });
 
-});
+// });
 
 //export router for server.js
 module.exports = router;
