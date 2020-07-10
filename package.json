@@ -28,7 +28,7 @@
     "method-override": "^2.3.9",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.1",
-    "sequelize": "^4.23.4"
+    "sequelize": "^5.15.1"
   },
   "devDependencies": {}
 }
